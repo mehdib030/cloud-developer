@@ -19,6 +19,18 @@ router.get('/', async (req: Request, res: Response) => {
 //@TODO
 //Add an endpoint to GET a specific resource by Primary Key
 
+router.get('/:id', async(req:Request, res: Response) => {
+    let { id } = req.params;
+    if (!id) {
+        return res.status(400).send({ message: 'id is required or malformed' });
+    }
+    
+    const item = await FeedItem.findById(id);
+    if(item){
+        res.status(201).send(item);
+    }
+})
+
 // update a specific resource
 router.patch('/:id', 
     requireAuth, 
