@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Gabriel Ruttner",
+  "author": "Mehdi Benyebka",
   "license": "ISC",
   "dependencies": {
     "@types/bcrypt": "^3.0.0",
