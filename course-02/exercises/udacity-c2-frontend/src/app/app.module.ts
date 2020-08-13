@@ -16,7 +16,7 @@ import { ApiService } from './api/api.service';
 @NgModule({
   declarations: [
     AppComponent,
-    MenubarComponent
+    MenubarComponent 
   ],
   entryComponents: [],
   imports: [

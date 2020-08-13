@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { FeedModule } from '../feed/feed.module';
 import { HomePage } from './home.page';
-
+ 
 @NgModule({
   imports: [
     FeedModule,
